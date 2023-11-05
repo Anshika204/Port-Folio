@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="side_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">My work</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer!</p>
+                <h3 class="info">Hi! I am </h3>
+                <h1>Anshika Gupta</h1>
+                <h4 id="aboutMe">About me</h4>
+                <p>I am Front-end web designer knowing HTML, CSS, Javascript. I like simple and minimalistic design as you can see in my portfolio. I am intermediate in C++, C language.</p>
+            </div>
+        </div>
+    </div>
+    <!-------------my works------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work2.jpg.png">
+                    <div class="layer">
+                        <h3>Landing space</h3>
+                        <p>This page will provide you information like timings, price of food etc about the restaurants DAILY BUZZ.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="works-3.jpg.png
+                    ">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>It is easy to use and Intuitive user interface for listening music using HTML, CSS, JavaScript.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="works2.jpg.png">
+                    <div class="layer">
+                        <h3>know food</h3>
+                        <p>This website will help you to know about your traditional food and also famous food in other states and country.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------contact----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>anshikagupta0420@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9359146742</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-instagram-square"></i></a>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="AnshikaGupta_InternshalaResume.pdf" class="btn" download>Download CV</a><br>
+                    <a href="https://leetcode.com/anshika_gupta20/" class="btn"> LeetCode</a>
+                    <a href="https://github.com/Anshika204" class="btn"> GitHub</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="your name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" rows="6" placeholder="your message"></textarea>
+                        <button class="btn btn2" type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0e9c2cf98c.js" crossorigin="anonymous"></script>
+    <script>
+        var side_menu=document.getElementById("side_menu");
+        function openmenu(){
+            side_menu.style.right="0";
+        }
+        function closemenu(){
+            side_menu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
